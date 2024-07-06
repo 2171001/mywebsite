@@ -25,7 +25,7 @@
             overflow: hidden;
             padding: 2em 0;
         }
-        h1, h2, h3 {
+        h1, h2, h3, h4 {
             margin: 0.5em 0;
         }
         p {
@@ -47,6 +47,20 @@
             border-radius: 5px;
             margin-bottom: 1em;
         }
+        .content {
+            margin-bottom: 2em;
+        }
+        .content ul li {
+            background: none;
+            padding: 0;
+        }
+        .content ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .content ul li a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -62,22 +76,35 @@
                 <li><strong>Navigable:</strong> It's mostly plain text, so you can search it in your browser. This website has everything you need in two clicks.</li>
             </ul>
         </section>
-        
-        <section>
+
+        <section class="content">
+            <h4>Content</h4>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#what-im-working-on">What I'm Working On</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+
+        <section id="about-me">
             <h2>About Me</h2>
             <p>
                 I am a music addict who thrives on performing penetration tests.
             </p>
         </section>
         
-        <section>
+        <section id="what-im-working-on">
             <h2>What I'm Working On</h2>
             <p>
                 I'm obsessed with AI right now and integrating it into my daily work.
             </p>
         </section>
         
-        <section>
+        <section id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>Penetration Testing</li>
@@ -91,7 +118,7 @@
             </ul>
         </section>
         
-        <section>
+        <section id="experience">
             <h2>Experience</h2>
             <h3>Cybersecurity Intern - [Company Name]</h3>
             <p>
@@ -104,7 +131,7 @@
             </ul>
         </section>
         
-        <section>
+        <section id="projects">
             <h2>Projects</h2>
             <h3>Blockchain-based Certificate Generation and Validation System</h3>
             <p>
@@ -116,7 +143,7 @@
             </p>
         </section>
         
-        <section>
+        <section id="education">
             <h2>Education</h2>
             <h3>Cybersecurity Certificate Program - [Institution Name]</h3>
             <p>
@@ -152,7 +179,7 @@
             </p>
         </section>
         
-        <section>
+        <section id="contact">
             <h2>Contact</h2>
             <p>Email: abel@example.com</p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/abel-benedict">linkedin.com/in/abel-benedict</a></p>
