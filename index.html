@@ -75,133 +75,162 @@
         .resume-download a:hover {
             background: #555;
         }
+        #app {
+            overflow: hidden;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+        }
+        #app a {
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+        }
+        #app canvas {
+            display: block;
+            position: fixed;
+            z-index: -1;
+            top: 0;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Hey, I'm Abel Benedict</h1>
     </header>
-    <div class="container">
-        <div class="resume-download">
-            <a href="path/to/your/resume.pdf" download>Download My Resume</a>
+    <div id="app">
+        <div id="hero">
+            <div class="container">
+                <div class="resume-download">
+                    <a href="path/to/your/resume.pdf" download>Download My Resume</a>
+                </div>
+                <section class="welcome">
+                    <h2>Welcome!</h2>
+                    <p>This website provides references to my publicly-available professional work. Why the simple design?</p>
+                    <ul>
+                        <li><strong>Accessible:</strong> Everyone doesn't have high-speed Internet. You won't find clunky images, videos, or ads. Mobile-friendly site.</li>
+                        <li><strong>Navigable:</strong> It's mostly plain text, so you can search it in your browser. This website has everything you need in two clicks.</li>
+                    </ul>
+                </section>
+        
+                <section class="content">
+                    <h4>Content</h4>
+                    <ul>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#what-im-working-on">What I'm Working On</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </section>
+        
+                <section id="about-me">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a music addict who thrives on performing penetration tests.
+                    </p>
+                </section>
+                
+                <section id="what-im-working-on">
+                    <h2>What I'm Working On</h2>
+                    <p>
+                        I'm obsessed with AI right now and integrating it into my daily work.
+                    </p>
+                </section>
+                
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Penetration Testing</li>
+                        <li>Cybersecurity Analysis</li>
+                        <li>AI Integration</li>
+                        <li>Network Security</li>
+                        <li>Cloud Security</li>
+                        <li>Programming (Python, JavaScript)</li>
+                        <li>SIEM Tools</li>
+                        <li>Communication & Stakeholder Influence</li>
+                    </ul>
+                </section>
+                
+                <section id="experience">
+                    <h2>Experience</h2>
+                    <h3>Cybersecurity Intern - [Company Name]</h3>
+                    <p>
+                        [Month Year] - [Month Year]
+                    </p>
+                    <ul>
+                        <li>Conducted penetration testing on various systems and networks.</li>
+                        <li>Assisted in the development and implementation of security policies.</li>
+                        <li>Collaborated with the IT team to improve overall security posture.</li>
+                    </ul>
+                </section>
+                
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <h3>Blockchain-based Certificate Generation and Validation System</h3>
+                    <p>
+                        Developed a secure and efficient system for generating and validating certificates for government organizations using blockchain technology.
+                    </p>
+                    <h3>AI-driven Cybersecurity Tools</h3>
+                    <p>
+                        Created AI tools to enhance cybersecurity measures and automate threat detection and response.
+                    </p>
+                </section>
+                
+                <section id="education">
+                    <h2>Education</h2>
+                    <h3>Cybersecurity Certificate Program - [Institution Name]</h3>
+                    <p>
+                        Completed courses covering core security concepts, networks, programming, SIEM tools, and influencing cybersecurity stakeholders with communications.
+                    </p>
+                    <h3>Microsoft Cybersecurity Analyst Course - Coursera</h3>
+                    <p>
+                        In progress
+                    </p>
+                    <h3>Certified Ethical Hacking (v12) Specialization - Coursera</h3>
+                    <p>
+                        In progress
+                    </p>
+                    <h3>System and Network Security - Coursera</h3>
+                    <p>
+                        In progress
+                    </p>
+                    <h3>Advanced Cybersecurity - Coursera</h3>
+                    <p>
+                        In progress
+                    </p>
+                    <h3>CEH (v12) Practice Projects and Exam Simulators - Coursera</h3>
+                    <p>
+                        In progress
+                    </p>
+                    <h3>Strategies for Cloud Security Risk Management - Coursera</h3>
+                    <p>
+                        In progress
+                    </p>
+                    <h3>Cloud Security Risks: Identify and Protect Against Threats - Coursera</h3>
+                    <p>
+                        In progress
+                    </p>
+                </section>
+                
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <p>Email: abel@example.com</p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/abel-benedict">linkedin.com/in/abel-benedict</a></p>
+                    <p>GitHub: <a href="https://github.com/abelbenedict">github.com/abelbenedict</a></p>
+                </section>
+        
+                <script type="module">
+                    import { particleCursor } from const pc = particleCursor({
+                        el: document.getElementById('app'), gpgpuSize: 512, colors: [0x1d9ae8,0x1d9ae8], color: 0x0000ff, coordScale: 0.15,
+                    });
+                </script>
+            </div>
         </div>
-        <section class="welcome">
-            <h2>Welcome!</h2>
-            <p>This website provides references to my publicly-available professional work. Why the simple design?</p>
-            <ul>
-                <li><strong>Accessible:</strong> Everyone doesn't have high-speed Internet. You won't find clunky images, videos, or ads. Mobile-friendly site.</li>
-                <li><strong>Navigable:</strong> It's mostly plain text, so you can search it in your browser. This website has everything you need in two clicks.</li>
-            </ul>
-        </section>
-
-        <section class="content">
-            <h4>Content</h4>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#what-im-working-on">What I'm Working On</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </section>
-
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>
-                I am a music addict who thrives on performing penetration tests.
-            </p>
-        </section>
-        
-        <section id="what-im-working-on">
-            <h2>What I'm Working On</h2>
-            <p>
-                I'm obsessed with AI right now and integrating it into my daily work.
-            </p>
-        </section>
-        
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Penetration Testing</li>
-                <li>Cybersecurity Analysis</li>
-                <li>AI Integration</li>
-                <li>Network Security</li>
-                <li>Cloud Security</li>
-                <li>Programming (Python, JavaScript)</li>
-                <li>SIEM Tools</li>
-                <li>Communication & Stakeholder Influence</li>
-            </ul>
-        </section>
-        
-        <section id="experience">
-            <h2>Experience</h2>
-            <h3>Cybersecurity Intern - [Company Name]</h3>
-            <p>
-                [Month Year] - [Month Year]
-            </p>
-            <ul>
-                <li>Conducted penetration testing on various systems and networks.</li>
-                <li>Assisted in the development and implementation of security policies.</li>
-                <li>Collaborated with the IT team to improve overall security posture.</li>
-            </ul>
-        </section>
-        
-        <section id="projects">
-            <h2>Projects</h2>
-            <h3>Blockchain-based Certificate Generation and Validation System</h3>
-            <p>
-                Developed a secure and efficient system for generating and validating certificates for government organizations using blockchain technology.
-            </p>
-            <h3>AI-driven Cybersecurity Tools</h3>
-            <p>
-                Created AI tools to enhance cybersecurity measures and automate threat detection and response.
-            </p>
-        </section>
-        
-        <section id="education">
-            <h2>Education</h2>
-            <h3>Cybersecurity Certificate Program - [Institution Name]</h3>
-            <p>
-                Completed courses covering core security concepts, networks, programming, SIEM tools, and influencing cybersecurity stakeholders with communications.
-            </p>
-            <h3>Microsoft Cybersecurity Analyst Course - Coursera</h3>
-            <p>
-                In progress
-            </p>
-            <h3>Certified Ethical Hacking (v12) Specialization - Coursera</h3>
-            <p>
-                In progress
-            </p>
-            <h3>System and Network Security - Coursera</h3>
-            <p>
-                In progress
-            </p>
-            <h3>Advanced Cybersecurity - Coursera</h3>
-            <p>
-                In progress
-            </p>
-            <h3>CEH (v12) Practice Projects and Exam Simulators - Coursera</h3>
-            <p>
-                In progress
-            </p>
-            <h3>Strategies for Cloud Security Risk Management - Coursera</h3>
-            <p>
-                In progress
-            </p>
-            <h3>Cloud Security Risks: Identify and Protect Against Threats - Coursera</h3>
-            <p>
-                In progress
-            </p>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: abel@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/abel-benedict">linkedin.com/in/abel-benedict</a></p>
-            <p>GitHub: <a href="https://github.com/abelbenedict">github.com/abelbenedict</a></p>
-        </section>
     </div>
 </body>
 </html>
