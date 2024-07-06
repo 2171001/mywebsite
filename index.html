@@ -75,6 +75,48 @@
         .resume-download a:hover {
             background: #555;
         }
+        .dl-parachute {
+            position: relative;
+            display: inline-block;
+            margin: 1em 0;
+        }
+        .dl-parachute a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #333;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        .dl-parachute a:hover .circle {
+            animation: circleAnimation 1.5s ease-in-out forwards;
+        }
+        .dl-parachute a:hover .line {
+            animation: lineAnimation 1.5s ease-in-out forwards;
+        }
+        @keyframes circleAnimation {
+            0% {
+                opacity: 1;
+                transform: translateY(0) rotate(180deg);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100px) rotate(180deg);
+            }
+        }
+        @keyframes lineAnimation {
+            0% {
+                stroke-dashoffset: 280;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -82,8 +124,19 @@
         <h1>Hey, I'm Abel Benedict</h1>
     </header>
     <div class="container">
-        <div class="resume-download">
-            <a href="path/to/your/resume.pdf" download>Download My Resume</a>
+        <div class="resume-download dl-parachute">
+            <a href="path/to/your/resume.pdf" download>
+                <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45"/>
+                </svg>
+                <svg class="line" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="50" y1="100" x2="50" y2="0"/>
+                </svg>
+                Download My Resume
+                <svg class="arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path class="parachute" d="M12 18C10.9 18 10 17.1 10 16V10H14V16C14 17.1 13.1 18 12 18ZM12 2C11.4 2 11 2.4 11 3V7.34L7.66 5L6.66 6L12 10.66L17.34 6L16.34 5L14 7.34V3C14 2.4 13.6 2 13 2H12Z"/>
+                </svg>
+            </a>
         </div>
         <section class="welcome">
             <h2>Welcome!</h2>
